@@ -1,0 +1,1 @@
+wifiphisher --force-hostapd -e keri-FREE --logging -kN 
