@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.mainWindowController">
+   <children>
+      <Pane id="basePane" fx:id="basePane" prefHeight="800.0" prefWidth="1200.0">
+         <children>
+            <Button id="EXIT_button" fx:id="EXIT_button" layoutX="1100.0" layoutY="740.0" mnemonicParsing="false" onAction="#EXIT_button" text="EXIT">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="504.0" layoutY="30.0" prefHeight="76.0" prefWidth="192.0" text="Lottó">
+               <font>
+                  <Font size="63.0" />
+               </font>
+            </Label>
+            <Label layoutX="302.0" layoutY="140.0" text="Adja meg az ön által gondolt számokat:">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <TextField id="beker1" fx:id="beker1" layoutX="302.0" layoutY="239.0" prefHeight="69.0" prefWidth="66.0" />
+            <TextField id="beker2" fx:id="beker2" layoutX="438.0" layoutY="239.0" prefHeight="69.0" prefWidth="66.0" />
+            <TextField id="beker3" fx:id="beker3" layoutX="567.0" layoutY="239.0" prefHeight="69.0" prefWidth="66.0" />
+            <TextField id="beker4" fx:id="beker4" layoutX="696.0" layoutY="239.0" prefHeight="69.0" prefWidth="66.0" />
+            <TextField id="beker5" fx:id="beker5" layoutX="832.0" layoutY="239.0" prefHeight="69.0" prefWidth="66.0" />
+            <Label id="label1" fx:id="label1" layoutX="302.0" layoutY="340.0" prefHeight="30.0" prefWidth="66.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label id="label2" fx:id="label2" layoutX="438.0" layoutY="340.0" prefHeight="30.0" prefWidth="66.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label id="label3" fx:id="label3" layoutX="567.0" layoutY="340.0" prefHeight="30.0" prefWidth="66.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label id="label4" fx:id="label4" layoutX="696.0" layoutY="340.0" prefHeight="30.0" prefWidth="66.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label id="label5" fx:id="label5" layoutX="832.0" layoutY="340.0" prefHeight="30.0" prefWidth="66.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button id="sorsolas_button" fx:id="sorsolas_button" layoutX="509.0" layoutY="517.0" mnemonicParsing="false" onAction="#sorsolas_button" text="Sorsolás">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+            <Label id="eredmeny" fx:id="eredmeny" layoutX="507.0" layoutY="463.0" prefHeight="46.0" prefWidth="383.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+
+      <Pane id="alertPane" fx:id="alertPane" layoutX="206.0" layoutY="166.0" prefHeight="488.0" prefWidth="829.0" visible="false">
+         <children>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#80a1bf" height="488.0" stroke="BLACK" strokeType="INSIDE" width="829.0" />
+            <Label id="alertText" fx:id="alertText" layoutX="260.0" layoutY="119.0" prefHeight="278.0" prefWidth="489.0" textAlignment="CENTER">
+               <font>
+                  <Font size="22.0" />
+               </font></Label>
+            <Button id="alertButton" fx:id="alertButton" layoutX="368.0" layoutY="397.0" mnemonicParsing="false" onAction="#alertButton" prefHeight="46.0" prefWidth="101.0" text="OK" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
