@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scene_proba.calculateController">
+   <children>
+      <Button id="szamolas_bButton" fx:id="szamolas_Button" layoutX="557.0" layoutY="686.0" mnemonicParsing="false" onAction="#szamolas_button" text="Számolás!" />
+      <Label layoutX="179.0" layoutY="84.0" prefHeight="31.0" prefWidth="842.0" text="Adja meg a két számot aminek eredmányeit meg akarja kapni:">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField id="elsoszam_textF" fx:id="elsoszam_textF" layoutX="350.0" layoutY="181.0" prefHeight="60.0" prefWidth="171.0" />
+      <TextField id="masodikszam_textF" fx:id="masodikszam_textF" layoutX="801.0" layoutY="181.0" prefHeight="60.0" prefWidth="171.0" />
+      <Label layoutX="229.0" layoutY="199.0" text="Első szám:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="643.0" layoutY="199.0" text="Második szám:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="283.0" text="Összeadva:">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="355.0" text="Kivonva:">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="433.0" text="Szorozva:">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="505.0" text="Osztva:">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label id="osszeadva_label" fx:id="osszeadva_label" layoutX="842.0" layoutY="283.0">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label id="kivonva_label" fx:id="kivonva_label" layoutX="842.0" layoutY="355.0">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label id="szorozva_label" fx:id="szorozva_label" layoutX="842.0" layoutY="433.0">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label id="osztva_label" fx:id="osztva_label" layoutX="842.0" layoutY="505.0">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label id="hiba_label" fx:id="hiba_label" layoutX="340.0" layoutY="593.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
