@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.user_panel.login_panelController">
+   <children>
+      <Pane id="calc_pane" fx:id="calc_pane" prefHeight="450.0" prefWidth="700.0" visible="false">
+         <children>
+            <Label layoutX="202.0" layoutY="40.0" text="4 alapművelet eredményei">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="123.0" text="Első szám:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="368.0" layoutY="123.0" text="Második szám:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="147.0" layoutY="180.0" text="Összeadva:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="147.0" layoutY="225.0" text="Kivonva:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="147.0" layoutY="265.0" text="Szorozva:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="147.0" layoutY="310.0" text="Osztva:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField id="szam1_TF" fx:id="szam1_TF" layoutX="171.0" layoutY="122.0" />
+            <TextField id="szam2_TF" fx:id="szam2_TF" layoutX="507.0" layoutY="122.0" />
+            <Label id="osszeadva_label" fx:id="osszeadva_label" layoutX="333.0" layoutY="179.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label id="kivonva_label" fx:id="kivonva_label" layoutX="333.0" layoutY="224.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label id="szorozva_label" fx:id="szorozva_label" layoutX="333.0" layoutY="265.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label id="osztva_label" fx:id="osztva_label" layoutX="333.0" layoutY="310.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Button id="szamolas_button" fx:id="szamolas_button" layoutX="307.0" layoutY="371.0" mnemonicParsing="false" onAction="#szamolas_button" text="Számolás!" />
+            <Button id="calc_back_button" fx:id="calc_back_button" layoutX="618.0" layoutY="16.0" mnemonicParsing="false" onAction="#calc_back_button_action" text="Vissza" />
+         </children>
+      </Pane>
+      <Pane id="userif_pane" fx:id="userif_pane" prefHeight="450.0" prefWidth="700.0" visible="false">
+         <children>
+            <Button id="calc_button" fx:id="calc_button" layoutX="137.0" layoutY="201.0" mnemonicParsing="false" onAction="#calc_button" text="Számológép" />
+            <Button layoutX="459.0" layoutY="201.0" mnemonicParsing="false" text="Kamat számítás" />
+         </children>
+      </Pane>
+      <Pane id="login_pane" fx:id="login_pane" prefHeight="450.0" prefWidth="700.0">
+         <children>
+            <Label layoutX="117.0" layoutY="160.0" text="Felhasználó név:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="162.0" layoutY="216.0" text="Jelszó:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label id="login_ertek" fx:id="login_ertek" layoutX="265.0" layoutY="272.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button id="login_button" fx:id="login_button" layoutX="293.0" layoutY="316.0" mnemonicParsing="false" onAction="#login_button_action" text="Bejelentkezés!" />
+            <TextField id="usr_name" fx:id="usr_name" layoutX="265.0" layoutY="157.0" />
+            <PasswordField id="usr_pass" fx:id="usr_pass" layoutX="265.0" layoutY="214.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
