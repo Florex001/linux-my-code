@@ -1,3 +1,4 @@
+
 @import url('https://fonts-googleapis-com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 *
 {
@@ -10,7 +11,7 @@
 body{
     min-height: 100vh;
     overflow-x: hidden;
-    background: linear-gradient(#2b1055,#7597de);
+    background: linear-gradient(#2b1055,#2b1055);
 }
 header{
     position: absolute;
@@ -145,9 +146,6 @@ section img#hegyek_szemben{
     height: 60vh;
     font-family: sans-serif;
     color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
     z-index: 11; 
     margin: 20px;
 
@@ -226,9 +224,13 @@ section img#hegyek_szemben{
     background-image: url(kepek/valorant.jpg);
     padding: 20px;
     box-sizing: border-box;
-    backface-visibility: hidden;
-    display: flex;
+    backface-visibility: hidden; 
     margin-right: 30px;
+}
+#krtya {
+    margin-right:60px;
+    margin-bottom:60px;
+    float: left;
 }
 .card-back{
     transform: rotateY(180deg);
@@ -322,4 +324,19 @@ span{
     margin: auto;
     padding: 20px;
     text-align: center;
+}
+h3 {
+    color:white;
+    margin-top:20px;
+}
+@media (max-width:700px) {
+    header ul{
+        display: block;
+        margin-top:20px;
+    }
+    li {
+        margin-bottom:20px;
+
+    }
+    
 }

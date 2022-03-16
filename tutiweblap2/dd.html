@@ -12,7 +12,6 @@
     <!--Navigáció-->
     <header>
         <a href="index.php" class="logo" >Gas Monkeys E-Sport</a>
-
         <ul>
             <li>
                 <a href="index.php" class="aktiv">Főoldal</a>
@@ -40,14 +39,7 @@
 
 if (!isLoggedIn()) {
     echo '<a href="regisztracio.php">Bejelentkezés</a>';
-} else {
-    $sid = $_SESSION['user']['id'];
-    $quiery = 'SELECT username FROM accounts WHERE id = "'. $sid .'"';
-    $felhasznalonev = mysqli_query($db, $quiery);
-    $row = $felhasznalonev -> fetch_array(MYSQLI_BOTH);
-       $uname = $row[0];
-
-       echo '<a href="profil.php?id='. $sid .'">'. $uname .'</a>';
+<a href="profil.php?id='. $sid .'">'. $uname .'</a>';
 }
 
 
@@ -99,9 +91,9 @@ if (!isLoggedIn()) {
 			$gr_date = $data['group_date'];
 
             echo ' 
-            <div class="card" id="krtya">
+            <div class="card">
                     <div class="inner-box" id="card">
-                    <div class="card-front4">
+                        <div class="card-front4">
                         </div>
             <div class="card-back4">
             <h1>Csapatnév</h1>

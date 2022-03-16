@@ -2,8 +2,8 @@
 session_start();
 
 // adadbázis ÉLES OLDAL
-
-$db = mysqli_connect('localhost','c1445_gasmonkeys', 'Nagyakukac1','c1445_gasmonkeys');
+$db = mysqli_connect('localhost','root', '','versenyes_cucc');
+//$db = mysqli_connect('localhost','c1445_gasmonkeys', 'Nagyakukac1','c1445_gasmonkeys');
 // változók deklalárása
 $errors   = array(); 
 

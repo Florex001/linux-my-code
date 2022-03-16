@@ -186,3 +186,14 @@ span{
     font-size: 13px;
     margin-top: 8px;
 }
+@media (max-width:700px) {
+    header ul{
+        display: block;
+        margin-top:20px;
+    }
+    li {
+        margin-bottom:20px;
+
+    }
+    
+}
