@@ -11,10 +11,10 @@
 <body>
     <!--Navigáció-->
     <header>
-        <a href="főoldal.html" class="logo" >Gas Monkeys E-Sport</a>
+        <a href="index.php" class="logo" >Gas Monkeys E-Sport</a>
         <ul>
             <li>
-                <a href="főoldal.php" class="aktiv">Főoldal</a>
+                <a href="index.php" class="aktiv">Főoldal</a>
             </li>
             <li>
     <?php 

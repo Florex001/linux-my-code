@@ -9,10 +9,10 @@
 </head>
 <body>
     <header>
-        <a href="főoldal.html" class="logo">Gas Monkeys E-Sport</a>
+        <a href="index.php" class="logo">Gas Monkeys E-Sport</a>
         <ul>
             <li>
-                <a href="főoldal.php" >Főoldal</a>
+                <a href="index.php" >Főoldal</a>
             </li>
             <li>
                 <a href="verseny.php">Versenyeink</a>
@@ -86,7 +86,7 @@ global $db, $errors, $id;
                             <input type="date" name="group_date" class="input-box" placeholder="">
                         </li>
                         <li>
-                        <button type="submit" name="group_btn" class="submit-btn">Jelentkezés</button>
+                        <button type="submit" name="group_btn">Jelentkezés</button>
 </li>
                     </ol>
                 </form>

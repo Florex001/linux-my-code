@@ -10,10 +10,10 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Gas Monkeys E-Sport</a>
+        <a href="index.php" class="logo">Gas Monkeys E-Sport</a>
         <ul>
             <li>
-                <a href="főoldal.php">Főoldal</a>
+                <a href="index.php">Főoldal</a>
             </li>
             <li>
             <?php 
