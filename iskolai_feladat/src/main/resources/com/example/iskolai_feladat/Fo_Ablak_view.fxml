@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.iskolai_feladat.Fo_Ablak_Controller">
+   <children>
+      <Button id="bal_felso_BTN" fx:id="bal_felso_BTN" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#bal_felso_BTN" prefHeight="56.0" prefWidth="199.0" text="Ugrás a bal felső sarokba!" />
+      <Button id="bal_also_BTN" fx:id="bal_also_BTN" layoutX="14.0" layoutY="430.0" mnemonicParsing="false" onMouseClicked="#bal_also_BTN" prefHeight="56.0" prefWidth="199.0" text="Ugrás a bal alsó sarokba!" />
+      <Button id="jobb_also_BTN" fx:id="jobb_also_BTN" layoutX="287.0" layoutY="430.0" mnemonicParsing="false" onMouseClicked="#jobb_also_BTN" prefHeight="56.0" prefWidth="199.0" text="Ugrás a jobb alsó sarokba!" />
+      <Button id="jobb_felso_BTN" fx:id="jobb_felso_BTN" layoutX="287.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#jobb_felso_BTN" prefHeight="56.0" prefWidth="199.0" text="Ugrás a jobb felső sarokba!" />
+      <Button id="keszitette_BTN" fx:id="keszitette_BTN" layoutX="208.0" layoutY="299.0" mnemonicParsing="false" onMouseClicked="#keszitette_BTN" text="Készítette" />
+      <Button id="kozep_BTN" fx:id="kozep_BTN" layoutX="205.0" layoutY="222.0" mnemonicParsing="false" onMouseClicked="#kozep_BTN" prefHeight="56.0" prefWidth="91.0" text="Középre!" />
+      <Label layoutX="102.0" layoutY="111.0" text="Először az ablak mozgató funkciókat próbáld!" />
+      <Label layoutX="91.0" layoutY="158.0" text="Csak 1920 x 1080-as kijelzőn!">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
