@@ -4,6 +4,7 @@ import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Dimension2D;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -11,6 +12,7 @@ import javafx.scene.control.ToolBar;
 import javafx.scene.control.Tooltip;
 import javafx.scene.control.skin.ToolBarSkin;
 import javafx.scene.control.skin.TooltipSkin;
+import javafx.scene.shape.Rectangle;
 import javafx.stage.Modality;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
@@ -54,8 +56,11 @@ public class Fo_Ablak_Controller {
     private void kozep_BTN(Event event){
         System.out.println("kozep_BTN lenyomva");
 
-        HelloApplication.foAblak.setX(705.0);
-        HelloApplication.foAblak.setY(204.66667172312737);
+        Rectangle2D screenBounds = Screen. getPrimary(). getBounds();
+        System. out. println("Height: " + screenBounds. getHeight() + " Width: " + screenBounds. getWidth());
+
+        HelloApplication.foAblak.setX(screenBounds. getWidth() /2 -250);
+        HelloApplication.foAblak.setY(screenBounds. getHeight() / 2 - 250);
 
 
 
@@ -74,16 +79,20 @@ public class Fo_Ablak_Controller {
     private void jobb_felso_BTN(Event event){
         System.out.println("jobb_felso_BTN lenyomva");
 
-        HelloApplication.foAblak.setX(1410);
-        HelloApplication.foAblak.setY(5);
+        Rectangle2D screenBounds = Screen. getPrimary(). getBounds();
+
+        HelloApplication.foAblak.setX(screenBounds. getWidth() -5 -500);
+        HelloApplication.foAblak.setY(0);
     }
 
     @FXML
     private void bal_also_BTN(Event event){
         System.out.println("bal_also_BTN lenyomva");
 
-        HelloApplication.foAblak.setX(5);
-        HelloApplication.foAblak.setY(540);
+        Rectangle2D screenBounds = Screen. getPrimary(). getBounds();
+
+        HelloApplication.foAblak.setX(0);
+        HelloApplication.foAblak.setY(screenBounds.getHeight() -575);
 
     }
 
@@ -91,8 +100,10 @@ public class Fo_Ablak_Controller {
     private void jobb_also_BTN(Event event){
         System.out.println("jobb_also_BTN lenyomva");
 
-        HelloApplication.foAblak.setX(1410);
-        HelloApplication.foAblak.setY(540);
+        Rectangle2D screenBounds = Screen. getPrimary(). getBounds();
+
+        HelloApplication.foAblak.setX(screenBounds.getWidth() -5 -500);
+        HelloApplication.foAblak.setY(screenBounds.getHeight() -575);
     }
 
 
